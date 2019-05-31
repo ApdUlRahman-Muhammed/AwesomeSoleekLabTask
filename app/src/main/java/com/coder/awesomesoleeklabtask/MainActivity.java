@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 LoginManager.getInstance();
+                   Intent i = new Intent(MainActivity.this , SignInActivity.class);
+                startActivity(i);
             }
 
         });
