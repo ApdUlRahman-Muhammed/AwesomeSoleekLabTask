@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/flight" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/iv_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_marginTop="22dp"
+        android:text="Name"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_marginTop="22dp"
+        android:text="Email"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_reg_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reg_email"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_marginTop="22dp"
+        android:text="Password"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/et_reg_confirm_password"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_reg_conf_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_reg_conf_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reg_email"
+        android:layout_alignStart="@+id/et_name"
+
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="89dp"
+        android:text="Confirm password"
+        android:textColor="#FFB3B3B3"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reg_password"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/rectangle_button1"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rectangle_button1"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/logWithGimalOrFacebookTextView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="40dp"
+        android:text="continue with Gmail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="32dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Awesome Soleek Lab Task</string>
+    <string name="loginWithGmail"><![CDATA[or login with facebook and gmail]]></string>
+    <string name="facebook_app_id">1094864914033795</string>
+
+</resources>
