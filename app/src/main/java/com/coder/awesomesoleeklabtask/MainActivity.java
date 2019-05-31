@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 LoginManager.getInstance();
                    Intent i = new Intent(MainActivity.this , SignInActivity.class);
                 startActivity(i);
+                 finish();
+
             }
 
         });
