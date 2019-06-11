@@ -120,7 +120,8 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_reg_password"
-        android:layout_marginTop="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
         android:background="@drawable/rectangle_button1"
         android:text="Register"
         android:textColor="#ffffff"
@@ -131,34 +132,37 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_register"
-        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
         android:background="@drawable/rectangle_button1"
         android:text="LOGIN"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
-    <Button
+    <com.google.android.gms.common.SignInButton
         android:id="@+id/logWithGimalOrFacebookTextView"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/btn_login"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="5dp"
 
-        android:layout_marginBottom="40dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:text="continue with Gmail"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp" />
+        android:textColor="@color/colorPrimary" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/facebook_button"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_login"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="18dp"
         android:layout_marginRight="32dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp" />
